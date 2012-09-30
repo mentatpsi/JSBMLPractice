@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created by JSBMLexample version 1.0 on 2012-09-30 14:57 with jsbml version 0.8. -->
+<sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
+  <model id="test_model" metaid="_7e8546ef-c5a0-4446-b834-0ad247340b14">
+    <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:dcterms="http://purl.org/dc/terms/">
+        <rdf:Description rdf:about="#_7e8546ef-c5a0-4446-b834-0ad247340b14">
+          <dc:creator>
+            <rdf:Bag>
+              <rdf:li rdf:parseType="Resource">
+                <vCard:N rdf:parseType="Resource">
+                  <vCard:Family>Family Name</vCard:Family>
+                  <vCard:Given>Given Name</vCard:Given>
+                </vCard:N>
+                <vCard:EMAIL>My@EMail.com</vCard:EMAIL>
+                <vCard:ORG rdf:parseType="Resource">
+                  <vCard:Orgname>Organisation</vCard:Orgname>
+                </vCard:ORG>
+              </rdf:li>
+            </rdf:Bag>
+          </dc:creator>
+          <dcterms:created rdf:parseType="Resource">
+            <dcterms:W3CDTF>2012-09-30T18:57:35Z</dcterms:W3CDTF>
+          </dcterms:created>
+          <dcterms:modified rdf:parseType="Resource">
+            <dcterms:W3CDTF>2012-09-30T18:57:35Z</dcterms:W3CDTF>
+          </dcterms:modified>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+    <listOfCompartments>
+      <compartment id="default" size="1"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="test_spec1" compartment="default"/>
+      <species id="test_spec2" compartment="default"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="reaction_id">
+        <listOfReactants>
+          <speciesReference species="test_spec1" sboTerm="SBO:0000015"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="test_spec2" sboTerm="SBO:0000011"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
